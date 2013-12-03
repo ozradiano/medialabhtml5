@@ -10,6 +10,7 @@
 <icon src="icon.png" />
 
     <name>PhoneGap Example</name>
+<gap:plugin name="org.apache.cordova.geolocation" version="0.3.2" />
 
     <description>
         this is milab 2014 phonegap wrap

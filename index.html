@@ -11,8 +11,12 @@
   <script>
 
      $(document).ready(function() {
-       navigator.geolocation.getCurrentPosition (function (pos)
+         
+        var geolocation = navigator.geolocation;
+
+        geolocation.watchPosition (function (pos)
         {
+          
           var lat = pos.coords.latitude;
           var lng = pos.coords.longitude;
           $("#lat").val (lat);
@@ -47,7 +51,6 @@
 </head> 
 
 <body> 
-
 <div data-role=page id=home>
   <div data-role=header>
     <h1>Home</h1>
@@ -56,7 +59,7 @@
   <div data-role=content>
     <span> Latitude : </span> <input type=text id=lat />
     <span> Longitude : </span> <input type=text id=lng />
-    <a data-role=button id=btn>Display map</a>
+    <a data-role=button data-icon="star" id=btn>Display map</a>
   </div>
 </div>
 

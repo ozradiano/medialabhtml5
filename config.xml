@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.2" />
+
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.example"
@@ -10,7 +12,6 @@
 <icon src="icon.png" />
 
     <name>PhoneGap Example</name>
-<gap:plugin name="org.apache.cordova.geolocation" version="0.3.2" />
 
     <description>
         this is milab 2014 phonegap wrap

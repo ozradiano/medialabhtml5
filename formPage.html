@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Milab 2014</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="c:\serverroot\favicon.ico" type="icon" />
+        <style type="text/css" >
+            .center
+            {
+                margin:auto;
+                width:40%;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" class="center">
+          <div data-role="header">
+            <h1>Create your profile</h1>
+          </div>
+            <br /><br />
+        <form action="send.html" method="get" class="center">
+            <table border="1">
+            <tr>
+                <td>
+                    Please supply your name:
+                </td>
+                <td>
+                    <input type="text" name="name" id="basic" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    What is your age?
+                </td>
+                <td>
+                    <input type="range" name="slider-1" id="slider-1" value="20" min="0" max="100" />
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2">
+                    <fieldset data-role="controlgroup">
+                        <legend>Choose you gender: </legend>
+                        <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                        <label for="radio-choice-1">Male</label>
+
+                        <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                        <label for="radio-choice-2">Female</label>
+                    </fieldset>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div data-role="collapsible">
+                        <h3>Why do we need this data?</h3>
+                        <p>We save it and sell it to other people</p>
+                     </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">                    
+                    <p style="margin-left: 25px">You have to agree to our <a href="http://www.google.com">Terms Of Use</a></p>
+                    <label><input type="checkbox" name="checkbox-0"/> I agree </label>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit"  data-inline="true" value="Let's Go!" />
+                </td>
+            </tr>
+        </table>
+        </form>
+        </div>
+    </body>
+</html>

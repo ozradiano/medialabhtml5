@@ -10,7 +10,8 @@
   <script>
 
     $(document).bind('pageinit', function () {
-  var geolocation = navigator.geolocation;
+        
+        var geolocation = navigator.geolocation;
 
            geolocation.getCurrentPosition (function (pos)
            {
@@ -40,7 +41,7 @@
              $.mobile.changePage ($("#win2"));
 
            var currCenter = map.getCenter();
-           //alert(currCenter);
+           alert(currCenter);
 
            var pinMarker = new google.maps.Marker ( 
              { 

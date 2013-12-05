@@ -44,6 +44,8 @@ function buildPage(allLine) {
 
 
 $(document).ready(function() {
+ 
+    $("#chatContainer").height( $( window ).height() - $("#header").height() - $(".controls").height());
     function post() {
         $.ajax({
             url: 'http://clashers.milab.idc.ac.il/php/milab_send_message.php',
@@ -80,10 +82,3 @@ $(document).ready(function() {
     get();
     setInterval("get()", 5000);
 });
-
-
-
-
-
-
-

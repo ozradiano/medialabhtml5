@@ -18,12 +18,12 @@
         </style>
     </head>
     <body>
-        <div style="position: fixed; width: 100%;" data-role="header" data-rel="back"><h4>Server Side Chat</h4></div>
+        <div id="header" style="position: fixed; width: 100%; z-index: 100;" data-role="header" data-rel="back"><h4>Server Side Chat</h4></div>
 
         <div id="chatContainer" class="chatContainer">
             <table id="chatTable"></table>
         </div>
-        <div class="controls">
+        <div class="controls" style="position: fixed; width: 100%; z-index: 100; bottom: 0;">
             <input type="text" id="name" value="Enter your Name here"/>
             <input type="text" id="text" value="Enter your Message here"/>
             <button id="submit">Submit</button>

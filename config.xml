@@ -16,8 +16,6 @@
         this is milab 2014 phonegap wrap
     </description>
 
-<gap:plugin name="org.apache.cordova.geolocation" />
-
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Hardeep Shoker 
     </author>

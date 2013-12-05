@@ -9,7 +9,6 @@ function get() {
                 buildPage(jason.users);
                 document.getElementById("chatTable").scrollTop = 9999;
             }
-            
         },
         error: function () {
             alert("error");
@@ -46,7 +45,7 @@ function buildPage(allLine) {
 
 $(document).ready(function() {
  
-    $.mobile.pageContainer = $('#chatContainer');
+    $("#chatContainer").css( "marginTop", $('#header').height()) ; 
             
     function post() {
         $.ajax({
@@ -86,5 +85,5 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-        $("#chatContainer").height( $( window ).height() - $("#header").height() - $(".controls").height());
+        $("#chatContainer").height( $( window ).height() - $(".controls").height());
 });

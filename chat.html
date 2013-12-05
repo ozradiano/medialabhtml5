@@ -9,7 +9,8 @@
         <title>Chat Room</title>
         <meta charset="UTF-8">
         <style>            
-            .chatContainer { height: 300px; width: 100%; overflow: auto;}
+            .chatContainer { height: 300px; width: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+            .chatContainer > * {-webkit-transform: translateZ(0px);} /* iphone fix */
             #chatTable { width: 100%; font-family: Helvetica,Arial,sans-serif; font-weight: 700; color: #222; text-shadow: 0 1px 0 #fff;}
             #chatTable .name {width: 10%; color: red;}
             #chatTable .text {width: 35%;}
@@ -21,7 +22,6 @@
 
         <div id="chatContainer" class="chatContainer">
             <table id="chatTable"></table>
-            <div id="chatbottom"></div>
         </div>
         <div class="controls">
             <input type="text" id="name" value="Enter your Name here"/>

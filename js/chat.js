@@ -7,7 +7,6 @@ function get() {
             var jason = JSON.parse(data);
             if (jason.success == 1) {
                 buildPage(jason.users);
-                document.getElementById("chatContainer").scrollTop = 99999;
             }
             
         },
